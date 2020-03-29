@@ -5,6 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using SQLitePCL;
+using SQLite;
+using System.IO;
 
 namespace SQLiteCheck
 {
@@ -16,6 +19,16 @@ namespace SQLiteCheck
         public MainPage()
         {
             InitializeComponent();
+        }
+
+      async  void Button_Clicked(System.Object sender, System.EventArgs e)
+        {
+            string dbpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "User1.db");
+            
+        }
+
+        void Button_Clicked_1(System.Object sender, System.EventArgs e)
+        {
         }
     }
 }
